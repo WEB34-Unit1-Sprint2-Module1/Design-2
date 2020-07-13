@@ -1,0 +1,114 @@
+/* Add CSS styling here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 3% 3%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 35px;
+}
+a {
+  justify-content: space-evenly;
+  border: 2px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.hero-img {
+  background-image: url("https://picsum.photos/400");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 33% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img .button-link {
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery div {
+  width: 33.3%;
+  padding: 6px;
+  text-align: center;
+}
+
+.gallery div img {
+  max-width: 100%;
+}
+
+/* .row1{
+   display: flex;
+   justify-content: space-evenly;
+   padding-bottom: 25px;
+}
+.row2{
+   display: flex;
+   justify-content: space-evenly;
+   padding-bottom: 25px; */
+
+/* } */
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+/* tablet */
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+/* PhoneView */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  nav div {
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    justify-content: center;
+  }
+  .hero-img {
+    display: flex;
+    align-items: center;
+  }
+  .gallery div {
+    width: 50%;
+  }
+  .facebook {
+    display: none;
+  }
+  .instagram {
+    display: none;
+  }
+  .twitter {
+    display: none;
+  }
+}
